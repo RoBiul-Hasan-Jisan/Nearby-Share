@@ -29,7 +29,7 @@ path — **Share with PC** — a tiny local HTTP server the phone runs on the
 same Wi-Fi network, opened from any ordinary browser. Two transports, one
 app, each used where it actually works.
 
-## 2. Features
+##  Features
 
 | | |
 |---|---|
@@ -59,7 +59,7 @@ no Bloc/Riverpod ceremony, just `ChangeNotifier`s that own one concern each.
         ▼
  Platform                            nearby_connections plugin · dart:io HttpServer · Android MethodChannel (Kotlin) · permission_handler
 ```
-![alt text](image.png)
+![Nearby Share](https://raw.githubusercontent.com/RoBiul-Hasan-Jisan/Nearby-Share/main/image.png)
 
 **Rule of thumb enforced by the folder layout:** only one file per external
 integration point ever touches it directly —
