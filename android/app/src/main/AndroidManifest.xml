@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Nearby Connections itself needs no INTERNET permission, but Android requires it
+         for any socket, including the local server "Share with PC" listens on. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- Nearby Connections (Bluetooth / Wi-Fi). No INTERNET permission needed. -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
