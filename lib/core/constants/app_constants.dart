@@ -9,6 +9,10 @@ class AppConstants {
 
   static const String receivedFolderLabel = 'Downloads/Nearby Share/Received';
 
+  /// Local HTTP server for "Share with PC" (phone <-> browser over Wi-Fi).
+  static const int pcSharePort = 8099;
+  static const String pcSharePeerName = 'PC (Wi-Fi)';
+
   static const int maxFilesPerTransfer = 200; // keeps the offer under the 32 KB bytes-payload limit
   static const int maxHistoryItems = 200;
 

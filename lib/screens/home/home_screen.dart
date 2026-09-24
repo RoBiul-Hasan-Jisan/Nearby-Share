@@ -78,6 +78,14 @@ class HomeScreen extends StatelessWidget {
               colors: AppColors.receiveGradient,
               onTap: () => _openFlow(context, Routes.receive),
             ),
+            const SizedBox(height: 14),
+            _ActionCard(
+              title: 'Share with PC',
+              description: 'Send and receive files with a computer over Wi-Fi',
+              icon: Icons.laptop_mac_rounded,
+              colors: const [Color(0xFF7C3AED), Color(0xFFA855F7)],
+              onTap: () => Navigator.pushNamed(context, Routes.pcShare),
+            ),
             const SizedBox(height: 32),
             Row(
               children: [
